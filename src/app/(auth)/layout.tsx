@@ -8,7 +8,7 @@ export default function AuthLayout({
 }>) {
   return (
     <>
-      <Header />
+      <Header hideNav />
       <main className="flex flex-grow">{children}</main>
       <Footer />
     </>
