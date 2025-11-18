@@ -5,7 +5,7 @@ type TypographyProps = {
   children: React.ReactNode;
 };
 
-export default ({ size = "h1", className, children }: TypographyProps) => {
+const Typography = ({ size = "h1", className, children }: TypographyProps) => {
   return {
     h1: <h1 className={`text-4xl ${className}`}>{children}</h1>,
     h2: <h2 className={`text-3xl ${className}`}>{children}</h2>,
@@ -16,3 +16,5 @@ export default ({ size = "h1", className, children }: TypographyProps) => {
     p: <p className={`text-base ${className}`}>{children}</p>,
   }[size];
 };
+
+export default Typography;

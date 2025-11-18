@@ -6,7 +6,7 @@ type ButtonProps = {
   children: React.ReactNode;
 };
 
-export default ({ variant = "primary", className, children }: ButtonProps) => {
+const Button = ({ variant = "primary", className, children }: ButtonProps) => {
   const variantClass: { [key in Variant]: string } = {
     primary: "bg-gray-900 text-white hover:bg-gray-800 active:bg-gray-500",
     secondary:
@@ -17,3 +17,5 @@ export default ({ variant = "primary", className, children }: ButtonProps) => {
 
   return <button className={buttonClass}>{children}</button>;
 };
+
+export default Button;

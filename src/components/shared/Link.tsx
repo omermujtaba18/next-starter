@@ -3,7 +3,7 @@ import Typography from "@/components/shared/Typography";
 
 type LinkProps = { text: string; href: string; className?: string };
 
-export default ({ text, href, className }: LinkProps) => {
+const Link = ({ text, href, className }: LinkProps) => {
   return (
     <NextLink.default
       href={href}
@@ -13,3 +13,5 @@ export default ({ text, href, className }: LinkProps) => {
     </NextLink.default>
   );
 };
+
+export default Link;

@@ -5,7 +5,7 @@ type TitleProps = {
   subTitle: string;
 };
 
-export default ({ title, subTitle }: TitleProps) => {
+const Title = ({ title, subTitle }: TitleProps) => {
   return (
     <div className="flex flex-col gap-2">
       <Typography size="h1" className="font-bold">
@@ -17,3 +17,5 @@ export default ({ title, subTitle }: TitleProps) => {
     </div>
   );
 };
+
+export default Title;

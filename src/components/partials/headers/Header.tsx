@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default ({ hideNav = false }: { hideNav?: boolean }) => {
+const Header = ({ hideNav = false }: { hideNav?: boolean }) => {
   return (
     <header className="bg-slate-50">
       <div className="container mx-auto flex min-h-16 flex-row items-center justify-between px-6 align-middle md:px-0">
@@ -19,3 +19,5 @@ export default ({ hideNav = false }: { hideNav?: boolean }) => {
     </header>
   );
 };
+
+export default Header;

@@ -1,6 +1,6 @@
 type DividerProps = { text?: string };
 
-export default ({ text }: DividerProps) => {
+const Divider = ({ text }: DividerProps) => {
   return (
     <div className="my-6 flex items-center">
       <hr className="flex-grow border-t border-gray-200" />
@@ -9,3 +9,5 @@ export default ({ text }: DividerProps) => {
     </div>
   );
 };
+
+export default Divider;

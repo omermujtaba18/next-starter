@@ -1,7 +1,7 @@
 import Form from "@/components/shared/Form";
 import Button from "@/components/shared/Button";
 
-export default () => {
+const RegisterForm = () => {
   return (
     <form className="flex flex-col gap-4">
       <Form.Input type="text" label="Your Name" placeholder="John Doe" />
@@ -15,3 +15,5 @@ export default () => {
     </form>
   );
 };
+
+export default RegisterForm;

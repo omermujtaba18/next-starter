@@ -2,7 +2,7 @@ import Form from "@/components/shared/Form";
 import Button from "@/components/shared/Button";
 import Link from "@/components/shared/Link";
 
-export default () => {
+const LoginForm = () => {
   return (
     <form className="flex flex-col gap-4">
       <Form.Input type="email" label="Email" placeholder="john@example.com" />
@@ -20,3 +20,5 @@ export default () => {
     </form>
   );
 };
+
+export default LoginForm;

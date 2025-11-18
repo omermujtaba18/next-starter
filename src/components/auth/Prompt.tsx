@@ -6,10 +6,12 @@ type PromptProps = {
   href: string;
 };
 
-export default ({ text, linkText, href }: PromptProps) => {
+const Prompt =  ({ text, linkText, href }: PromptProps) => {
   return (
     <div className="flex text-gray-500 gap-1">
       {text} <Link href={href} text={linkText} />
     </div>
   );
 };
+
+export default Prompt;

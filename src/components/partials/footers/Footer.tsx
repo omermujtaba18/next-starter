@@ -1,4 +1,4 @@
-export default () => {
+const Footer = () => {
   return (
     <footer className="bg-slate-50">
       <div className="container mx-auto flex min-h-16 flex-row items-center justify-between px-6 align-middle md:px-0">
@@ -7,3 +7,5 @@ export default () => {
     </footer>
   );
 };
+
+export default Footer;
